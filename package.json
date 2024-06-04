@@ -21,10 +21,10 @@
   "homepage": "https://github.com/reactioncommerce/reaction-eslint-config",
   "dependencies": {},
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "husky": "^4.2.5",
-    "semantic-release": "^17.0.7"
+    "semantic-release": "^19.0.3"
   },
   "peerDependencies": {
     "eslint": ">=7",
