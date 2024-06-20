@@ -1,8 +1,8 @@
-# @reactioncommerce/eslint-config
+# @bugslifesolutions/eslint-config
 
-[![CircleCI](https://circleci.com/gh/reactioncommerce/reaction-eslint-config/tree/master.svg?style=svg)](https://circleci.com/gh/reactioncommerce/reaction-eslint-config/tree/master)
+[![CircleCI](https://circleci.com/gh/bugslifesolutions/reaction-eslint-config/tree/master.svg?style=svg)](https://circleci.com/gh/bugslifesolutions/reaction-eslint-config/tree/master)
 
-[![NPM](https://nodei.co/npm/@reactioncommerce/eslint-config.png)](https://npmjs.org/package/@reactioncommerce/eslint-config)
+[![NPM](https://nodei.co/npm/@bugslifesolutions/eslint-config.png)](https://npmjs.org/package/@bugslifesolutions/eslint-config)
 
 The ESLint config used by Reaction Commerce JavaScript apps and packages, following our code style guide.
 
@@ -15,14 +15,14 @@ How to install and configure this in a project varies slightly depending on what
 Follow these instructions for Node projects, whether they use CommonJS or ECMAScript modules.
 
 ```sh
-npm install --save-dev eslint @reactioncommerce/eslint-config eslint-plugin-import eslint-plugin-jest eslint-plugin-node eslint-plugin-promise eslint-plugin-you-dont-need-lodash-underscore
+npm install --save-dev eslint @bugslifesolutions/eslint-config eslint-plugin-import eslint-plugin-jest eslint-plugin-node eslint-plugin-promise eslint-plugin-you-dont-need-lodash-underscore
 ```
 
 Then set your ESLint config either in package.json:
 
 ```json
 "eslintConfig": {
-  "extends": "@reactioncommerce/eslint-config/node"
+  "extends": "@bugslifesolutions/eslint-config/node"
 }
 ```
 
@@ -30,7 +30,7 @@ Or in a root file named `.eslintrc` if your project does not have a package.json
 
 ```json
 {
-  "extends": "@reactioncommerce/eslint-config/node"
+  "extends": "@bugslifesolutions/eslint-config/node"
 }
 ```
 
@@ -38,7 +38,7 @@ Or in a root file named `.eslintrc.cjs`:
 
 ```js
 module.exports = {
-  extends: "@reactioncommerce/eslint-config/node",
+  extends: "@bugslifesolutions/eslint-config/node",
 };
 ```
 
@@ -47,14 +47,14 @@ module.exports = {
 Follow these instructions for Webpack React projects, whether they use CommonJS or ECMAScript modules.
 
 ```sh
-npm install --save-dev eslint @reactioncommerce/eslint-config eslint-plugin-import eslint-plugin-jest eslint-plugin-promise eslint-plugin-you-dont-need-lodash-underscore eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
+npm install --save-dev eslint @bugslifesolutions/eslint-config eslint-plugin-import eslint-plugin-jest eslint-plugin-promise eslint-plugin-you-dont-need-lodash-underscore eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 Then set your ESLint config either in package.json:
 
 ```json
 "eslintConfig": {
-  "extends": "@reactioncommerce/eslint-config/browser-react"
+  "extends": "@bugslifesolutions/eslint-config/browser-react"
 }
 ```
 
@@ -62,7 +62,7 @@ Or in a root file named `.eslintrc` if your project does not have a package.json
 
 ```json
 {
-  "extends": "@reactioncommerce/eslint-config/browser-react"
+  "extends": "@bugslifesolutions/eslint-config/browser-react"
 }
 ```
 
@@ -70,7 +70,7 @@ Or in a root file named `.eslintrc.cjs`:
 
 ```js
 module.exports = {
-  extends: "@reactioncommerce/eslint-config/browser-react",
+  extends: "@bugslifesolutions/eslint-config/browser-react",
 };
 ```
 
@@ -79,14 +79,14 @@ module.exports = {
 Follow these instructions for React projects that are written in Typescript.
 
 ```sh
-npm install --save-dev eslint @reactioncommerce/eslint-config eslint-plugin-import eslint-plugin-promise eslint-plugin-you-dont-need-lodash-underscore eslint-plugin-jsx-a11y eslint-config-react-app @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm install --save-dev eslint @bugslifesolutions/eslint-config eslint-plugin-import eslint-plugin-promise eslint-plugin-you-dont-need-lodash-underscore eslint-plugin-jsx-a11y eslint-config-react-app @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 Then set your ESLint config either in package.json:
 
 ```json
 "eslintConfig": {
-  "extends": "@reactioncommerce/eslint-config/browser-react-ts"
+  "extends": "@bugslifesolutions/eslint-config/browser-react-ts"
 }
 ```
 
@@ -94,7 +94,7 @@ Or in a root file named `.eslintrc` if your project does not have a package.json
 
 ```json
 {
-  "extends": "@reactioncommerce/eslint-config/browser-react-ts"
+  "extends": "@bugslifesolutions/eslint-config/browser-react-ts"
 }
 ```
 
@@ -102,7 +102,7 @@ Or in a root file named `.eslintrc.cjs`:
 
 ```js
 module.exports = {
-  extends: "@reactioncommerce/eslint-config/browser-react-ts",
+  extends: "@bugslifesolutions/eslint-config/browser-react-ts",
 };
 ```
 
@@ -113,15 +113,15 @@ For a project that has mixture of Node server code and React browser code, run b
 ```json
 {
   "extends": [
-    "@reactioncommerce/eslint-config/browser-react",
-    "@reactioncommerce/eslint-config/node"
+    "@bugslifesolutions/eslint-config/browser-react",
+    "@bugslifesolutions/eslint-config/node"
   ]
 }
 ```
 
 ### Other Config
 
-For backward compatibility, doing `extends: "@reactioncommerce"` (without `/browser-react` or `/node`) continues to provide a combined config that uses the Babel parser. Using this is not recommended, but if you do, be sure to also `npm install --save-dev babel-eslint`.
+For backward compatibility, doing `extends: "@bugslifesolutions"` (without `/browser-react` or `/node`) continues to provide a combined config that uses the Babel parser. Using this is not recommended, but if you do, be sure to also `npm install --save-dev babel-eslint`.
 
 ## How to Use
 
