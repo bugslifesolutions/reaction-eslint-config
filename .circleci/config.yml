@@ -15,15 +15,15 @@ commands:
     description: "Create .npmrc file with auth token"
     steps:
       - run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-  save_cache:
-    description: "Save node_modules cache"
+  save_dependencies:
+    description: "Save node_modules"
     steps:
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-  restore_cache:
-    description: "Restore node_modules cache"
+  restore_dependencies:
+    description: "Restore node_modules"
     steps:
       - restore_cache:
           keys:
@@ -38,14 +38,14 @@ jobs:
       - checkout
       - setup_npm_auth
       - run: npm install
-      - save_cache
+      - save_dependencies
 
   deploy:
     executor: node_executor
     steps:
       - checkout
       - setup_npm_auth
-      - restore_cache
+      - restore_dependencies
       - run: npx semantic-release
 
 workflows:
